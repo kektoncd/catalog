@@ -46,6 +46,8 @@ spec:
     - name: post
       image: 1915keke/github-find-pull-request-by-commit:v0.0.1
       args:
+        - --base
+        - $(params.base)
         - --baseUrl
         - $(params.baseUrl)
         - --owner
